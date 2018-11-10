@@ -8,55 +8,63 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <div id="logo-brand">
-                <h1>Register</h1>
-            </div>
-        </div>
-    </header>
-<section id="register">
-    <div class="register">
+    <h1 class="container">SendIT
+        <nav>
+            <ul>
+    
+                <li><a href="index.html">Home</a></li>
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="user profile.html">Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+    
+            </ul>
+        </nav>
+    </h1>
+<body>
+    <div class="container">
+        <form id="contact" action="" method="post">
 
         <h1>PLEASE ENTER YOUR DETAILS TO REGISTER</h1>
-        <ul>
-            <input type="text" class="login-input" placeholder="Enter Email" name="email" autofocus required></ul>
-        
-        <ul>
-            <input type="password" class="login-input" placeholder="Enter Password" name="password" required></ul>
-        
-        <ul>
-            <input type="password" class="login-input" placeholder="Repeat Password" name="PasswordRepeat" required></ul>
-        
-        <ul>
-            <input type="address" class="login-input" placeholder="EnterAddress" name="Address" required></ul>
-        
-        <ul>
-            <input type="mobile number" class="login-input" class="login-input" placeholder="Enter phone number." name="mobile number"
-                required></ul>
-        
-        <ul>
-            <input type="county" class="login-input" placeholder="Enter county" name="county"></ul>
+        <fieldset>
+            <input placeholder="Your name" type="text" class="txt" tabindex="1" required autofocus>
+        </fieldset> 
+        <fieldset>
+            <input placeholder="Enter Password" type="text" class="txt" tabindex="2" required autofocus>
+        </fieldset>
+        <fieldset>
+            <input placeholder="Repeat Password" type="text" class="txt" tabindex="3" required autofocus>
+        </fieldset>
+        <fieldset>
+        <input placeholder="Enter Email Address" type="text" class="txt" tabindex="4" required autofocus>
+        </fieldset>
+        <fieldset>
+            <input placeholder="Enter Address" type="text" class="txt" tabindex="5" required autofocus>
+        </fieldset>
+        <fieldset>
+            <input placeholder="Enter phone number" type="text" class="txt" tabindex="6" required autofocus>
+        </fieldset>
 
-        </div>
-        
-        <p><input type="submit" value="Submit" class="login-submit"><br>
-            </section>
+        <fieldset>
+            <input placeholder="Enter county" type="text" class="txt" tabindex="7" required autofocus>
+        </fieldset>
+
+        <fieldset>
+            <button name="submit" type="submit" id="register-button" data-submit="Send">Submit</button>
+        </fieldset>
+        <br>
+    </form>
+    <div class="footer">
+    <footer>
+        <p>SendIT, Copyright &copy; 2018</p>
+        <p>
+            <button type="submit">HELP</button>
+            <button type="submit">contact</button>
         </p>
-        <div class="container login">
-            <p>Already have an account? <a href="login.html">Sign in</a>.</p>
-        </div>
-        <section id="footer">
-            <div container="footer">
-                <footer>
-                    <p>SendIT, Copyright &copy; 2018</p>
-                    <p>
-                        <button type="submit">HELP</button>
-                        <button type="submit">contact</button>
-                    </p>
-                </footer>
-            </div>
-        </section>
+    </footer>
+    </div>
+</div>
+       
 </body>
 </html>

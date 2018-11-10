@@ -8,45 +8,57 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
 </head>
-<div class="regi">
-<h1>Track & Trace</h1>
-<P>
-<h2>Parcel tracking details</h2>
-</P>
-</div>
+<body>
+    <h1 class="container">SendIT</h1>
+    <nav>
+        <ul>
 
-<section id="register">
-    <div class="regi">
+            <li><a href="register.html">Register</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="user profile.html">Profile</a></li>
+            <li><a href="login.html">Login</a></li>
+
+        </ul>
+
+<div class="container">
+    <form id="contact" action="" method="post">
+    
+        <h2>Parcel tracking details</h2>
+           
             Parcel number:<br>
-            <input type="number" class="login-input" placeholder="12345" name="Parcel number" ><br>
+            <input type="text" placeholder="12345" name="Parcel number" class="output" readonly ><br>
             Details:<br>
-            <tr>
-                <th><input type="text" value="2/09/2018" readonly></th>
-                <th><input type="text" value="15:40" readonly></th>
-                <th><input type="text" value="Nairobi" readonly></th>
-                <th><input type="text" value="collected from customer" readonly></th>
+            <tr>Date:<br>
+                <th><input type="text" value="2/09/2018" class="output" readonly></th>
+                <p>Time:</p>
+                <th><input type="text" value="15:40" class="output" readonly></th>
+                <p>Location</p>
+                <th><input type="text" value="Nairobi" class="output" readonly></th>
+                <p>Progress:</p>
+                <th><input type="text" value="collected from customer" class="output" readonly></th>
             </tr><br>
             <br>
             Status:<br>
-            <input type="text" class="login-input" placeholder="In progress" name="status" >
+            <input type="text"  class="output" placeholder="In progress" name="status" >
             <br>
     
             Change Location:<br>
-            <input type="text" class="login-input" placeholder="To Nairobi" name="status">
+            <input type="text"  class="output" placeholder="To Nairobi" name="status">
             <br>
     
             <br>
-            <input type="Update" value="Update" class="submit"><br>
-            <br>
-    
+            <button name="submit" type="submit" id="register-button" data-submit="Send">Update</button><br>
+            
+        </form><br>
+    <div class="footer">
         <footer>
             <p>SendIT, Copyright &copy; 2018</p>
             <p>
                 <button type="submit">HELP</button>
                 <button type="submit">contact</button>
-        </p>
+            </p>
         </footer>
     </div>
-</section>
+</div>
 </body>
 </html>
